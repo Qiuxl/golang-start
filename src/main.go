@@ -31,6 +31,8 @@ func main(){
 	qzh := &Minterface.Qzh{}
 	Minterface.DoDebug(qzh)
 
+	Minterface.Test()
+
 	http.HandleFunc("/hello",HelloServer)
 	err := http.ListenAndServe(":8989",nil)
 	if err != nil {
